@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+* {
+    box-sizing: border-box;
+  }
+html{
+    scroll-behavior:smooth;    
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 26%;
+    border: 3px solid white;
+    border-radius: 50px
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;  
+    
+}
+.nav-list{
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+ .nav-list li{
+    list-style: none;
+    padding: 12px 15px;
+
+ }
+
+ .nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+.rightNav{
+    width: 30%;
+    text-align : right;
+    padding: 0 23px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid brown;
+    border-radius: 9px;
+}
+.background{
+    background:rgb(192, 50, 50);
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+
+.firstSection{
+    height:21vh ;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 75%;
+    margin: auto;
+    height: 115%;   
+}
+.firstHalf{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150%;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 45px;
+    color:rgb(10, 10, 10);
+}
+.text-small{
+    font-size: 20px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 5px solid white;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 75%;
+    margin:auto;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+   
+}
+.section-left{
+   flex-direction: row-reverse;
+   
+}
+.paras{
+    padding: 0 65px;
+}
+.sectionsubTag{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.thumbnail img{
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+.contact{
+    background-color: aliceblue;
+    height: 85vh;
+}
+.text-center{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.form{
+    max-width:45%;
+    margin: -4px auto;
+}
+.form-input{
+    margin: 7px 0;
+    padding: 5px 3px;
+    width: 95%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.text-footer{
+    text-align:center;
+    padding: 20px 0;
+    display: flex;
+    font-size:medium;
+    justify-content: center;
+    color: white;
+    background-color: black;
+
+}
+.notice {
+    text-align: center;
+    padding: 3px;
+    border-top: 1px solid #D4D4D4;
+    color: rgb(38, 89, 38);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    position: sticky;
+}
+.topscrollBox {
+    width: 30%;
+    padding: 4px 10px;
+    right: 0;
+    overflow: hidden;
+    background: #072c57d9;
+    color: #f3ecec;
+    border-radius: 0px 0px 0px 10px;
+    z-index: 9999;
+    cursor: pointer;
+   
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right:5%;
+    top: 33px;
+    display: none;
+}
+.line{
+    width:30px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+   
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 20px; 
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    
+    cursor: pointer;
+  }
+
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #70d977;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(250, 246, 246);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+  .dropdown-content a:hover {
+    background-color: rgb(104, 175, 230);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .firstheader {
+    width: 10%;
+    padding: 4px 10px;
+    right: 0;
+    overflow: hidden;
+    background:black;
+    color: #f3ecec;
+    border-radius: 0px 0px 0px 10px;
+    z-index: 9999;
+    cursor: pointer;
+    position:absolute;    
+}
+.sectionBlock {
+    width: 140%;
+    padding: 4px 10px;
+    right: 0;
+    overflow: hidden;
+    background: #072c57d9;
+    font-size:20px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(249, 246, 246);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 75%;
+    margin: auto;
+    height: 115%;  
+    text-align: center;
+}
+.sectionBlock a{
+    text-decoration: none;
+    color: #f3ecec;
+    overflow: hidden;}
+
+.btn1 {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+     }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+  
